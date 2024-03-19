@@ -95,6 +95,7 @@ class Serpent:
     def lireSons(self):
         self.son_manger.play()
 
+
     def repeter(self):
         self.corps = [Vector2(5, 10), Vector2(4, 10), Vector2(3, 10)]
         self.direction = Vector2(0, 0)
@@ -156,6 +157,7 @@ class Main:
         for block in self.serpent.corps[1:]:
             if block == self.serpent.corps[0]:
                 self.gameOver()
+
     def gameOver(self):
         self.serpent.repeter()
 
